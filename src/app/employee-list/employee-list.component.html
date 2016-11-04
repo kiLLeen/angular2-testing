@@ -1,0 +1,8 @@
+Employee List
+<ul *ngFor="let employee of employees">
+  <li>
+    <b>Name:</b> {{employee.name}}
+    <b>Title:</b> {{employee.title}}
+    <button (click)="selectEmployee.emit(employee)">Select</button>
+  </li>
+</ul>

@@ -1,0 +1,5 @@
+<app-job-name (employeeListChange)="setEmployeeList($event)"></app-job-name>
+<app-employee-filter></app-employee-filter>
+<app-employee-list (selectEmployee)="setEmployee($event)" [employees]="employeeList"></app-employee-list>
+<app-employee-details [employee]="selectedEmployee"></app-employee-details>
+

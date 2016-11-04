@@ -1,0 +1,11 @@
+<form [formGroup]="employeeForm" (ngSubmit)="submit()">
+  <div>
+    Job Name: <input type="text" formControlName="name">
+  </div>
+  <div>
+    Job Title: <input type="text" formControlName="title">
+  </div>
+  <button [disabled]="!employeeForm.valid">Add</button>
+</form>
+
+
